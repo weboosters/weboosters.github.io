@@ -16,12 +16,22 @@
 <body>
 	
 	<header class="main-header grid">
-		<div class="header-content"><h1>Разблокировка iPhone <br>от <span>2500</span> рублей!</h1>
-			<input type="text" name="imei" placeholder="Введите IMEI"><br><br>
-			<a href="#" class="button">Разблокировать</a>
+		<div class="header-content"><h1>Разблокировка iPhone <br>от <span>2500</span> рублей!<a href="#info" class="popup">*</a></h1>
+			<a href="#form" class="button popup">Разблокировать</a>
 		</div>
 	</header>
 
+	<div class="hidden">
+		<form id="form">
+			<input type="text" name="name" placeholder="Ваше Имя"><br>
+			<input type="text" name="phone" placeholder="Ваш телефон"><br>
+			<input type="text" name="imei" placeholder="Введите IMEI"><br><br>
+			<button class="button">Разблокировать</button>
+		</form>
+		<div id="info">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam praesentium, voluptate hic voluptates adipisci distinctio, est porro odio culpa alias voluptas blanditiis asperiores. Provident impedit itaque non tempore esse dolore quibusdam, alias cumque aliquid, doloribus quidem maxime nesciunt eos quaerat, nemo accusamus repudiandae. Doloribus obcaecati at inventore aspernatur, repellendus! A rem delectus recusandae rerum dignissimos culpa repudiandae, eos assumenda quos cupiditate aliquid mollitia repellendus est ut et esse velit possimus enim ipsum, repellat accusantium! Iusto similique facilis tempore aliquam expedita quod error quidem, explicabo atque, sed excepturi recusandae culpa sit eaque nam sunt dolores unde blanditiis, obcaecati tempora repudiandae aliquid.
+		</div>
+	</div>
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>

@@ -4,6 +4,9 @@
 @import "vars"
 
 // Пользовательские стили
+.hidden
+	display: none
+
 .grid
 	display: grid
 
@@ -15,7 +18,6 @@
 	min-height: 100vh
 	color: #fff
 	align-content: center
-
 	&::before
 		content: ''
 		position: absolute
@@ -30,25 +32,30 @@
 	z-index: 1
 	text-align: center
 	padding: 40px 20px
-h1
-	font-size: 80px
-	animation-delay: 1s
-span
-	color: #E77E23
-	font-size: 120px
-input
-	height: 35px
-	width: 50%
-	border-radius: 20px
-	border-style: none
-	animation-delay: 1s
+	input
+		height: 35px
+		width: 50%
+		border-radius: 20px
+		border-style: none
+		padding: 0 10px
+		outline: none
+	h1
+		font-size: 80px
+		a
+			text-decoration: none
+			color: #fff
+			&:hover
+				color: #3A99D9
+				transition: color 0.5s ease
+			&:active
+				color: #3081B8
 
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
+
+	span
+		color: #E77E23
+		font-size: 120px	
 
 .button
-	animation-delay: 1s
 	display: inline-block
 	border: none
 	color: #fff
@@ -88,5 +95,24 @@ input
 		background-color: darken(#27AE61, 5%)
 		&::after
 			opacity: .32		
+form
+	padding: 20px
+	max-width: 320px
+	background: #fff
+	text-align: center
+	margin: auto
+	position: relative
+	input
+		height: 35px
+		border-radius: 20px
+		width: 100%
+		border-style: dotted
+		padding: 0 10px
+		outline: none
+		margin-top: 20px
 
-@import "media" // Всегда в конце
+#info
+	background: #fff
+	padding: 20px		
+
+@import "media"
